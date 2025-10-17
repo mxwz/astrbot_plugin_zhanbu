@@ -780,6 +780,21 @@ def xiaoliuren(msg: str):
     global hour
     global list1
 
+    # 每次调用函数时重置全局变量
+    global list1, list2, list3, num_str, num_str_1, num_str_2, num_str_3, hls, hls_zd, dict1, pan_list, hourlist_3
+    list1 = []
+    list2 = []
+    list3 = []
+    num_str = ['大安', '留连', '速喜', '赤口', '小吉', '空亡']
+    num_str_1 = ['大安', '留连', '速喜', '赤口', '小吉', '空亡']
+    num_str_2 = ['大安', '留连', '速喜', '赤口', '小吉', '空亡']
+    num_str_3 = ['大安', '留连', '速喜', '赤口', '小吉', '空亡']
+    hourlist_3 = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
+    hls = ['青龙', '朱雀', '勾陈', '白虎', '玄武', '腾蛇']
+    hls_zd = {}
+    dict1 = {}
+    pan_list = {}
+
     # 例如：/小六壬 [问题] [选项(数字)] [数字(英文逗号)] [时辰(单字)] [详细/简短(default 0 or 1)]
     # 例如：/小六壬 财运 1
     # 例如：/小六壬 财运 2
@@ -1003,5 +1018,7 @@ def xiaoliuren(msg: str):
 if __name__ == '__main__':
     # exists_path()
     # /小六壬 [问题][选项(数字)][数字(英文逗号)][时辰(单字)][详细 / 简短(default 0 or 1)]
-    a = xiaoliuren('/小六壬 财运 3 9,7,6 戌 简短')
+    a = xiaoliuren('/小六壬 以后过得怎么样 3 3,1,8 寅 简短')
+    b = xiaoliuren('/小六壬 以后过得怎么样 3 1,2,8 寅 简短')
     print(a)
+    print(b)
