@@ -1,8 +1,8 @@
 name: astrbot_plugin_zhanbu # 这是你的插件的唯一识别名。
-desc: 占卜插件 # 插件简短描述
+desc: 占卜起数小工具，用于懒人排盘、占卜等，包括但不限于小六壬、梅花易数、塔罗等 # 插件简短描述
 version: v1.0.2 # 插件版本号。格式：v1.1.1 或者 v1.1
 author: mxwz # 作者
 repo: https://github.com/mxwz/astrbot_plugin_zhanbu # 插件的仓库地址
-tags: ["文字", "占卜", "塔罗牌", "小六壬", "梅花易数"]
+tags: ["占卜", "排盘", "塔罗牌", "小六壬", "梅花易数"]
 python_version: ">=3.10"
 astrbot_version: ">=3.4.0"
