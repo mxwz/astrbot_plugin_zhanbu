@@ -1,0 +1,14 @@
+{
+  "enable_sent_picture": {
+    "description": "发送塔罗牌图片",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后，将塔罗牌图片发送"
+  },
+  "enable_repost": {
+    "description": "群聊转发开关",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后，将塔罗牌图片以合并转发的形式发送给群聊"
+  }
+}
